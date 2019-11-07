@@ -8,7 +8,7 @@ var newList = updatePlaylist(playlist, "Angels of Light", "Not Here/Not Now");
 console.log("Original: " + playlist["Angels of Light"]);
 console.log("     New: " + newList["Angels of Light"]);
 
-removeFromPlaylist(newList, "Radiohead");
+removeFromPlaylist(playlist, "Radiohead");
 console.log(playlist); 
 console.log(newList); 
 
