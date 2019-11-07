@@ -9,7 +9,7 @@ console.log("Original: " + playlist["Angels of Light"]);
 console.log("     New: " + newList["Angels of Light"]);
 
 removeFromPlaylist(newList, "Radiohead");
-console.log(newList["Radiohead"]); 
+console.log(newList); 
 
 function updatePlaylist(playlistObject, artistName, songName) {
   playlistObject[artistName] = songName;
@@ -17,6 +17,6 @@ function updatePlaylist(playlistObject, artistName, songName) {
 }
 
 function removeFromPlaylist(playlistObject, artistName) {
-  delete playlistObject.artistName; 
+  delete playlistObject[artistName]; 
   return playlistObject; 
 }
