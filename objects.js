@@ -5,9 +5,7 @@ var playlist = new Object({["Deerhunter"]: "Nothing Ever Happened"});
 updatePlaylist(playlist, "Radiohead", "Idioteque");
 var newList = updatePlaylist(playlist, "Angels of Light", "Not Here/Not Now");
 
-console.log("Original: " + playlist["Angels of Light"]);
-console.log("     New: " + newList["Angels of Light"]);
-
+// Below 3 lines show that newList is a reference to playlist - not a separate copy.
 removeFromPlaylist(playlist, "Radiohead");
 console.log(playlist); 
 console.log(newList); 
